@@ -21,8 +21,8 @@
                                 <rect key="frame" x="130" y="312" width="114" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
-                                <state key="normal" title="Dank Button!!!">
-                                    <color key="titleColor" red="0.55774368523316065" green="0.55774368523316065" blue="0.55774368523316065" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Dank Button">
+                                    <color key="titleColor" red="0.294385524611399" green="0.294385524611399" blue="0.294385524611399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="firstMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Rf-az-ZGT"/>
