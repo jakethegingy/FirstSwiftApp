@@ -197,7 +197,7 @@
                                     <segue destination="qRx-Xa-ogb" kind="show" id="zV3-cz-H7Y"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CfH-mV-xud">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DroneShotOne" translatesAutoresizingMaskIntoConstraints="NO" id="CfH-mV-xud">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="461"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -206,22 +206,28 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yY-hQ-DiK">
-                                <rect key="frame" x="16" y="481" width="171" height="94"/>
+                                <rect key="frame" x="0.0" y="582" width="158" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="tintColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Pause / Play">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIj-aX-dD3">
-                                <rect key="frame" x="233" y="499" width="161" height="58"/>
+                                <rect key="frame" x="253" y="583" width="161" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Next Image">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="NextImage:" destination="qoi-sH-AF4" eventType="touchUpInside" id="Kre-78-Ila"/>
+                                    <action selector="NextImage:" destination="xwq-hy-2ec" eventType="touchUpInside" id="MHh-ge-Dqv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -229,6 +235,7 @@
                         <viewLayoutGuide key="safeArea" id="rFH-jH-xRf"/>
                     </view>
                     <connections>
+                        <outlet property="imageButton" destination="MIj-aX-dD3" id="gxL-qe-fBB"/>
                         <outlet property="imageFrame" destination="CfH-mV-xud" id="92g-Sn-Syv"/>
                     </connections>
                 </viewController>
@@ -238,6 +245,9 @@
             <point key="canvasLocation" x="2237.68115942029" y="31.793478260869566"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="DroneShotOne" width="1252" height="939"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="HZM-88-c4s"/>
         <segue reference="zV3-cz-H7Y"/>

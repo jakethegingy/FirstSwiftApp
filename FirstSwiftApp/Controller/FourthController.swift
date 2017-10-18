@@ -24,7 +24,7 @@ public class FourthController : UIViewController
     }
     private func switchImage() -> Void
     {
-        if (imageCounter > 4)
+        if (imageCounter > 3)
         {
             imageCounter = 0
         }
@@ -36,9 +36,18 @@ public class FourthController : UIViewController
         {
             imageFrame.image = UIImage(named: "TheDab")
         }
+        else if (imageCounter  == 2)
+        {
+            imageFrame.image = UIImage(named: "rocketbunny-nissan-gt-r-widebody-1")
+        }
+        else if (imageCounter == 3)
+        {
+            imageFrame.image = UIImage(named: "HouseBoat")
+        }
         else
         {
             imageFrame.image = UIImage(named: "DroneShotOne")
         }
+        imageCounter += 1
     }
 }
