@@ -90,7 +90,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="SwipeTwo:" destination="kGt-qa-GIl" eventType="valueChanged" id="niu-Cw-rZL"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Acc-ga-HhW"/>
+                                    <segue destination="qRx-Xa-ogb" kind="show" id="9dc-Sk-Hpi"/>
                                 </connections>
                             </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6Y-Pd-AdQ">
@@ -139,17 +139,27 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="ThirdSwipe:" destination="BNn-tc-Diu" eventType="valueChanged" id="eA1-7J-owB"/>
-                                    <segue destination="tg4-8z-1ew" kind="show" id="ZSx-86-jnL"/>
+                                    <segue destination="xwq-hy-2ec" kind="show" id="Zis-hi-Qav"/>
                                 </connections>
                             </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTN-LR-SyY">
-                                <rect key="frame" x="117" y="609" width="181" height="41"/>
+                                <rect key="frame" x="206" y="610" width="181" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Previous">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="tg4-8z-1ew" kind="show" id="kB4-tO-5Yg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EvX-Bf-HLW">
+                                <rect key="frame" x="76" y="615" width="103" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xwq-hy-2ec" kind="show" id="HZM-88-c4s"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -160,12 +170,78 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pjs-4M-sCc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="BNn-tc-Diu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1441" y="32"/>
+            <point key="canvasLocation" x="1440.5797101449277" y="31.793478260869566"/>
+        </scene>
+        <!--Fourth Controller-->
+        <scene sceneID="neV-2f-5rx">
+            <objects>
+                <viewController id="xwq-hy-2ec" customClass="FourthController" customModule="FirstSwiftApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yo5-xc-FPw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="tJC-UA-Kgz">
+                                <rect key="frame" x="16" y="649" width="383" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="qRx-Xa-ogb" kind="show" id="TUa-nL-C0a"/>
+                                </connections>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5M-YS-HqF">
+                                <rect key="frame" x="156" y="622" width="103" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Previous">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qRx-Xa-ogb" kind="show" id="zV3-cz-H7Y"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CfH-mV-xud">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="461"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="DOF-rM-lhA">
+                                <rect key="frame" x="18" y="559" width="378" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yY-hQ-DiK">
+                                <rect key="frame" x="16" y="481" width="171" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Pause / Play">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIj-aX-dD3">
+                                <rect key="frame" x="233" y="499" width="161" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Next Image">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="NextImage:" destination="qoi-sH-AF4" eventType="touchUpInside" id="Kre-78-Ila"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97934172837791111" green="0.76999961541502859" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="rFH-jH-xRf"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageFrame" destination="CfH-mV-xud" id="92g-Sn-Syv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PkT-yr-FY2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="qoi-sH-AF4" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2237.68115942029" y="31.793478260869566"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="IRF-2o-cuU"/>
-        <segue reference="ZSx-86-jnL"/>
-        <segue reference="Acc-ga-HhW"/>
+        <segue reference="HZM-88-c4s"/>
+        <segue reference="zV3-cz-H7Y"/>
+        <segue reference="kB4-tO-5Yg"/>
+        <segue reference="nPa-Ue-69c"/>
     </inferredMetricsTieBreakers>
 </document>
