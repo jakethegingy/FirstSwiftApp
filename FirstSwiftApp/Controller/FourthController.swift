@@ -10,13 +10,14 @@ import UIKit
 import AVFoundation
 public class FourthController : UIViewController
 {
+    private var soundPlayer : AVAudioPlayer?
+    private var imageCounter : Int = 0
+    private lazy var color : ColorTools = ColorTools()
+    
     @IBOutlet weak var imageFrame: UIImageView!
     @IBOutlet weak var imageButton: UIButton!
     @IBOutlet weak var soundButton: UIButton!
     @IBOutlet weak var soundSlider: UISlider!
-    private var soundPlayer : AVAudioPlayer?
-    private var imageCounter : Int = 0
-    private lazy var color : ColorTools = ColorTools()
     
     @IBAction func NextImage(_ sender: Any)
     {
@@ -50,4 +51,25 @@ public class FourthController : UIViewController
         }
         imageCounter += 1
     }
+    private func loadAudioFile() -> Void
+    {
+        if let soundURL = NSDataAsset(name: "")
+        {
+            do
+            {
+                try! AVAudioSession.sharedInstance()setCategory(AVAudioSessionCategoryPlayback)
+                try! AVAudioSession.sharedIstance().setActive(true)
+                
+                try soundPlayer = AVAudioPlayer(data: soundURL.data, fileTypeHint: AVFileType.mp3.rawValue)
+                soundSlide.maximumValue = Float ((soundPlayer?.duration)!)
+                Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: (#selector(self.updateSlider)), userInfo: nil, repeats: true)
+            }
+            catch
+            {
+                print("Audio File Load Error")
+            }
+        }
+    }
+    
+    @objc pivate 
 }
